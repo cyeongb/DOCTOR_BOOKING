@@ -3,7 +3,7 @@ import add_icon from './add_icon.png';
 import add_doc_icon from './add_doc_icon.png';
 import appointment_doc from './appointment_doc.png';
 import appointment_icon from './appointment_icon.png';
-import appintments_icon from './appintments_icon.svg';
+import appointments_icon from './appointments_icon.svg';
 import blog_icon from './blog_icon.png';
 import cancel_icon from './cancel_icon.svg';
 import contact from './contact.png';
@@ -49,7 +49,7 @@ export const assets={
     about,
     add_doc_icon,
     add_icon,
-    appintments_icon,
+    appointments_icon,
     appointment_doc,
     appointment_icon,
     blog_icon,
