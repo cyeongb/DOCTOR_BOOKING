@@ -1,192 +1,299 @@
-import about from './about.png';
-import add_icon from './add_icon.png';
-import add_doc_icon from './add_doc_icon.png';
-import appointment_doc from './appointment_doc.png';
-import appointment_icon from './appointment_icon.png';
-import appointments_icon from './appointments_icon.svg';
-import blog_icon from './blog_icon.png';
-import cancel_icon from './cancel_icon.svg';
-import contact from './contact.png';
-import dashboard_icon from './dashboard_icon.png';
-import Dermatologist from './dermatologist.svg';
-import doc_main from './doc_main.png';
-import doc1_m from './doc1_m.png';
-import doc1_sm from './doc1_sm.png';
-import doc1 from './doc1.png';
-import doc2 from './doc2.png';
-import doc3 from './doc3.png';
-import doc4 from './doc4.png';
-import doc5 from './doc5.png';
-import doc6 from './doc6.png';
-import doc7 from './doc7.png';
-import doc8 from './doc8.png';
-import doctor_icon from './doctor_icon.svg';
-import doctors_icon from './doctors_icon.png';
-import dropdow_icon from './dropdow_icon.svg';
-import email_icon from './email_icon.png';
-import Gastroenterologist from './Gastroenterologist.svg';
-import General_physician from './General_physician.svg';
-import Gynecologist from './Gynecologist.svg';
-import logo from './logo.svg';
-import Neurologist from './Neurologist.svg';
-import patients_icon from './patients_icon.svg';
-import Pediatricians from './Pediatricians.svg';
-import person1 from './person1.png';
-import person2 from './person2.png';
-import person3 from './person3.png';
-import person4 from './person4.png';
-import profile_img from './profile_img.svg';
-import upload_area from './upload_area.png';
-import uploads_area from './uploads_area.svg';
+import appointment_img from './appointment_img.png'
+import header_img from './header_img.png'
+import group_profiles from './group_profiles.png'
+import profile_pic from './profile_pic.png'
+import contact_image from './contact_image.png'
+import about_image from './about_image.png'
+import logo from './logo.svg'
+import dropdown_icon from './dropdown_icon.svg'
+import menu_icon from './menu_icon.svg'
+import cross_icon from './cross_icon.png'
+import chats_icon from './chats_icon.svg'
+import verified_icon from './verified_icon.svg'
+import arrow_icon from './arrow_icon.svg'
+import info_icon from './info_icon.svg'
+import upload_icon from './upload_icon.png'
+import stripe_logo from './stripe_logo.png'
+import razorpay_logo from './razorpay_logo.png'
+import doc1 from './doc1.png'
+import doc2 from './doc2.png'
+import doc3 from './doc3.png'
+import doc4 from './doc4.png'
+import doc5 from './doc5.png'
+import doc6 from './doc6.png'
+import doc7 from './doc7.png'
+import doc8 from './doc8.png'
+import doc9 from './doc9.png'
+import doc10 from './doc10.png'
+import doc11 from './doc11.png'
+import doc12 from './doc12.png'
+import doc13 from './doc13.png'
+import doc14 from './doc14.png'
+import doc15 from './doc15.png'
+import Dermatologist from './Dermatologist.svg'
+import Gastroenterologist from './Gastroenterologist.svg'
+import General_physician from './General_physician.svg'
+import Gynecologist from './Gynecologist.svg'
+import Neurologist from './Neurologist.svg'
+import Pediatricians from './Pediatricians.svg'
 
-export const assets={
-    Dermatologist,
-    Gastroenterologist,
-    General_physician,
-    Gynecologist,
-    Neurologist,
-    Pediatricians,
-    about,
-    add_doc_icon,
-    add_icon,
-    appointments_icon,
-    appointment_doc,
-    appointment_icon,
-    blog_icon,
-    cancel_icon,
-    contact,
-    dashboard_icon,
-    doc_main,
-    doc1_m,
-    doc1_sm,
-    doc1,
-    doc2,
-    doc3,
-    doc4,
-    doc5,
-    doc6,
-    doc7,
-    doc8,
-    doctor_icon,
-    doctors_icon,
-    dropdow_icon,
-    email_icon,
+
+export const assets = {
+    appointment_img,
+    header_img,
+    group_profiles,
     logo,
-    patients_icon,
-    person1,
-    person2,
-    person3,
-    person4,
-    profile_img,
-    upload_area,
-    uploads_area
+    chats_icon,
+    verified_icon,
+    info_icon,
+    profile_pic,
+    arrow_icon,
+    contact_image,
+    about_image,
+    menu_icon,
+    cross_icon,
+    dropdown_icon,
+    upload_icon,
+    stripe_logo,
+    razorpay_logo
 }
 
-export const doctors=[
+export const specialityData = [
     {
-        _id:'doc1',
-        name:'Dr.Richard James',
+        speciality: 'General physician',
+        image: General_physician
+    },
+    {
+        speciality: 'Gynecologist',
+        image: Gynecologist
+    },
+    {
+        speciality: 'Dermatologist',
+        image: Dermatologist
+    },
+    {
+        speciality: 'Pediatricians',
+        image: Pediatricians
+    },
+    {
+        speciality: 'Neurologist',
+        image: Neurologist
+    },
+    {
+        speciality: 'Gastroenterologist',
+        image: Gastroenterologist
+    },
+]
+
+export const doctors = [
+    {
+        _id: 'doc1',
+        name: 'Dr. Richard James',
         image: doc1,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'4 years',
-        fees:50,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'General physician',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '17th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc2',
-        name:'Dr.Honaldo James',
+        _id: 'doc2',
+        name: 'Dr. Emily Larson',
         image: doc2,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'14 years',
-        fees:80,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Gynecologist',
+        degree: 'MBBS',
+        experience: '3 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 60,
+        address: {
+            line1: '27th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc3',
-        name:'Dr.Sam Smith',
+        _id: 'doc3',
+        name: 'Dr. Sarah Patel',
         image: doc3,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'8 years',
-        fees:60,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Dermatologist',
+        degree: 'MBBS',
+        experience: '1 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 30,
+        address: {
+            line1: '37th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
-    }
-    ,
+    },
     {
-        _id:'doc4',
-        name:'Dr.Sarah Hermione',
+        _id: 'doc4',
+        name: 'Dr. Christopher Lee',
         image: doc4,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'11 years',
-        fees:67,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Pediatricians',
+        degree: 'MBBS',
+        experience: '2 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 40,
+        address: {
+            line1: '47th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc5',
-        name:'Dr.Summer Panels',
+        _id: 'doc5',
+        name: 'Dr. Jennifer Garcia',
         image: doc5,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'6 years',
-        fees:53,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Neurologist',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '57th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc6',
-        name:'Dr.Chifield Sanonne',
+        _id: 'doc6',
+        name: 'Dr. Andrew Williams',
         image: doc6,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'15 years',
-        fees:90,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Neurologist',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '57th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc7',
-        name:'Dr.Soleman Pubson',
+        _id: 'doc7',
+        name: 'Dr. Christopher Davis',
         image: doc7,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'21 years',
-        fees:105,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'General physician',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '17th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
     },
     {
-        _id:'doc8',
-        name:'Dr.Snoop Dog',
+        _id: 'doc8',
+        name: 'Dr. Timothy White',
         image: doc8,
-        specialty:'General physician',
-        degree:'MBBS',
-        experience:'1 years',
-        fees:10,
-        address:{
-            line1:'27th Cross, Richmond',
-            line2:'Circle, Kingsberry London'
+        speciality: 'Gynecologist',
+        degree: 'MBBS',
+        experience: '3 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 60,
+        address: {
+            line1: '27th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
         }
-    }
-    // 17분,30까지
+    },
+    {
+        _id: 'doc9',
+        name: 'Dr. Ava Mitchell',
+        image: doc9,
+        speciality: 'Dermatologist',
+        degree: 'MBBS',
+        experience: '1 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 30,
+        address: {
+            line1: '37th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc10',
+        name: 'Dr. Jeffrey King',
+        image: doc10,
+        speciality: 'Pediatricians',
+        degree: 'MBBS',
+        experience: '2 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 40,
+        address: {
+            line1: '47th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc11',
+        name: 'Dr. Zoe Kelly',
+        image: doc11,
+        speciality: 'Neurologist',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '57th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc12',
+        name: 'Dr. Patrick Harris',
+        image: doc12,
+        speciality: 'Neurologist',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '57th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc13',
+        name: 'Dr. Chloe Evans',
+        image: doc13,
+        speciality: 'General physician',
+        degree: 'MBBS',
+        experience: '4 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 50,
+        address: {
+            line1: '17th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc14',
+        name: 'Dr. Ryan Martinez',
+        image: doc14,
+        speciality: 'Gynecologist',
+        degree: 'MBBS',
+        experience: '3 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 60,
+        address: {
+            line1: '27th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
+    {
+        _id: 'doc15',
+        name: 'Dr. Amelia Hill',
+        image: doc15,
+        speciality: 'Dermatologist',
+        degree: 'MBBS',
+        experience: '1 Years',
+        about: 'Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies. Dr. Davis has a strong commitment to delivering comprehensive medical care, focusing on preventive medicine, early diagnosis, and effective treatment strategies.',
+        fees: 30,
+        address: {
+            line1: '37th Cross, Richmond',
+            line2: 'Circle, Ring Road, London'
+        }
+    },
 ]
